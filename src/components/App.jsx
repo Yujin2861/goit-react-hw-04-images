@@ -39,8 +39,8 @@ export const App = () => {
         }
 
         const images = imagesArray(hits);
-        setImages(prevState => {
-          return [...prevState, ...images];
+        setImages(prevItem => {
+          return [...prevItem, ...images];
         });
 
         setCurrentImgPerPage(hits.length);
